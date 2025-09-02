@@ -44,7 +44,7 @@ fun NoticiasScreen() {
                 title = {
                     TextField(
                         value = "",
-                        onValueChange = { /* Aquí manejar búsqueda */ },
+                        onValueChange = { },
                         placeholder = { Text("Buscar") },
                         leadingIcon = {
                             Icon(
@@ -94,7 +94,7 @@ fun NoticiasScreen() {
                 contentPadding = PaddingValues(16.dp),
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                items(3) { // 2–3 tarjetas de ejemplo
+                items(3) { 
                     NoticiaCard()
                 }
             }
@@ -113,7 +113,7 @@ fun NoticiasScreen() {
                 contentPadding = PaddingValues(16.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp),
                 horizontalArrangement = Arrangement.spacedBy(12.dp),
-                modifier = Modifier.height(400.dp) // limitar altura para que se vea
+                modifier = Modifier.height(400.dp) 
             ) {
                 items(6) {
                     NoticiaCard()
@@ -142,6 +142,6 @@ fun NoticiaCard() {
         modifier = Modifier
             .size(150.dp)
             .clip(RoundedCornerShape(12.dp))
-            .background(Color.Gray) // espacio reservado para la imagen
+            .background(Color.Gray) 
     )
 }
